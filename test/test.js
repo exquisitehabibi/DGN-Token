@@ -90,9 +90,9 @@ describe("DegenToken", function () {
           });
         
     
-        it("Should fail to redeem if amount is zero", async function () {
+        it("Should fail to redeem if Item ID is invalid", async function () {
             await expect(degenToken.connect(addr1).redeemItem(100)).to.be.revertedWith(
-                "Invalid item ID" // Contract should revert with 'Invalid item ID' for zero amount
+                "Invalid item ID" 
             );
         });
 
