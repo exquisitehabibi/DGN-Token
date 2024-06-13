@@ -17,10 +17,8 @@ After cloning the github, you will first want to create a .env file to enter the
 Then perform the following to get the code running on your computer:
 
 1. Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network fuji scripts/deploy.js
-5. To test the contract's functionality using test.js, type: npx hardhat test
+2. To test the contract's functionality using test.js, type: npx hardhat test
+3. To deploy the contract, type: npx hardhat run --network fuji scripts/deploy.js
 
 After this, the project will be running on Fuji testnet.
 You can then use the contact's deployment address to interact with contract using Remix (https://remix.ethereum.org/) IDE or by creating your own frontend.
